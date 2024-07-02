@@ -58,6 +58,7 @@ echo "faschk:${FASCHK}__${f}" > input.${f}.checksum.txt
 }
 
 process gt_tidysort {
+conda 'bioconda::genometools-genometools'
 input:
  path gff_file
 output:
